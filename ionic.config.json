@@ -1,0 +1,7 @@
+{
+  "name": "pinKeys",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
