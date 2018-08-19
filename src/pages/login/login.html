@@ -1,0 +1,59 @@
+<ion-header>
+   <ion-navbar hideBackButton="true">
+    <img src="assets/imgs/PinKeys Official - Logo with Background.png" class="image-hdr"/>
+  </ion-navbar>
+  <ion-card>
+  <ion-card-header class="card-title">
+    Create Account
+</ion-card-header>
+</ion-card>
+</ion-header>
+
+
+<ion-content class="page-login">
+  <form (submit)="doLogin()">
+    <ion-card>
+    <ion-list>
+      <ion-item>
+      <ion-label floating>{{ 'User Name'}}</ion-label>
+      <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+      </ion-item>
+
+      <ion-item-divider color="light"></ion-item-divider>
+
+      <ion-item>
+        <ion-label floating>{{ 'Email'}}</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item-divider color="light"></ion-item-divider>
+
+      <ion-item>
+        <ion-label floating>{{ 'Password'}}</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+      </ion-item>
+
+      <ion-item-divider color="light"></ion-item-divider>
+
+      <ion-grid>
+      <ion-row>
+
+      <ion-col col-auto>
+        <button ion-button clear color="red">
+        {{ 'Sign in instead'}}
+        </button>
+      </ion-col>
+
+      <ion-col col-auto  style="padding-left:30px;">
+        <button ion-button color="red">
+        {{ 'Next'}}
+        </button>
+      </ion-col>
+
+      </ion-row>
+      </ion-grid>
+
+    </ion-list>
+    </ion-card>
+  </form>
+</ion-content>
